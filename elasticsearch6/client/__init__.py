@@ -1372,7 +1372,7 @@ class Elasticsearch(object):
             params["scroll_id"] = scroll_id
 
         return self.transport.perform_request(
-            "GET", "/_search/scroll", params=params, body=body
+            "POST", "/_search/scroll", params=params, body=body
         )
 
     @query_params()
