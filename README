@@ -41,7 +41,7 @@ The recommended way to set your requirements in your `setup.py` or
 `requirements.txt` is::
 
     # Elasticsearch 6.x
-    elasticsearch6>=6.0.0,<7.0.0
+    elasticsearch>=6.0.0,<7.0.0
 
     # Elasticsearch 5.x
     elasticsearch5>=5.0.0,<6.0.0
@@ -55,10 +55,10 @@ versions are also released as ``elasticsearch2`` and ``elasticsearch5``.
 Installation
 ------------
 
-Install the ``elasticsearch6`` package with `pip
+Install the ``elasticsearch`` package with `pip
 <https://pypi.python.org/pypi/elasticsearch>`_::
 
-    pip install elasticsearch6
+    pip install elasticsearch
 
 
 Example use
@@ -67,7 +67,7 @@ Example use
 Simple use-case::
 
     >>> from datetime import datetime
-    >>> from elasticsearch6 import Elasticsearch
+    >>> from elasticsearch import Elasticsearch
 
     # by default we connect to localhost:9200
     >>> es = Elasticsearch()
